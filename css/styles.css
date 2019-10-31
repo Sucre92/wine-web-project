@@ -1,0 +1,111 @@
+/*------------------------------------*\
+	#OVERRIDE STLES
+	This style sheet can be used for two different functions:
+	1. Override specific Bootstrap styles.
+	2. Add your own styles.
+\*------------------------------------*/
+
+body { padding-top: 70px; }
+
+.container-fluid { max-width: 1200px; }
+
+/* SLIDER */
+#slider {
+	background:#000;
+	border:5px solid #eaeaea;
+	box-shadow:1px 1px 5px rgba(0,0,0,0.7);
+	height:330px;
+	width:680px;
+	overflow:visible;
+	position:relative; float:right
+}
+#mask {
+	overflow:hidden;
+	height:320px;
+}
+#slider ul {
+	margin:0;
+	padding:0;
+	position:relative;
+}
+#slider li {
+	width:680px;
+	height:320px;
+	position:absolute;
+	top:-325px;
+	list-style:none;
+}
+
+#slider li.firstanimation {
+	-moz-animation:cycle 25s linear infinite;	
+	-webkit-animation:cycle 25s linear infinite;
+	-ms-animation:cycle 25s linear infinite;
+	-o-animation:cycle 25s linear infinite;		
+}
+#slider li.secondanimation {
+	-moz-animation:cycletwo 25s linear infinite;
+	-webkit-animation:cycletwo 25s linear infinite;
+	-ms-animation:cycletwo 25s linear infinite;
+	-o-animation:cycletwo 25s linear infinite;		
+}
+#slider li.thirdanimation {
+	-moz-animation:cyclethree 25s linear infinite;
+	-webkit-animation:cyclethree 25s linear infinite;
+	-ms-animation:cyclethree 25s linear infinite;
+	-o-animation:cyclethree 25s linear infinite;		
+}
+#slider li.fourthanimation {
+	-moz-animation:cyclefour 25s linear infinite;
+	-webkit-animation:cyclefour 25s linear infinite;
+	-ms-animation:cyclefour 25s linear infinite;
+	-o-animation:cyclefour 25s linear infinite;		
+}
+#slider li.fifthanimation {
+	-moz-animation:cyclefive 25s linear infinite;
+	-webkit-animation:cyclefive 25s linear infinite;
+	-ms-animation:cyclefive 25s linear infinite;
+	-o-animation:cyclefive 25s linear infinite;	
+}
+
+#slider .tooltip {
+	background:rgba(0,0,0,0.7);
+	width:300px;
+	height:60px;
+	position:relative;
+	bottom:75px;
+	left:-320px;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+	-ms-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;  
+}
+#slider .tooltip h1 {
+	color:#fff;
+	font-size:24px;
+	font-weight:300;
+	line-height:60px;
+	padding:0 0 0 20px;
+}
+
+
+
+/* PROGRESS BAR */
+.progress-bar { 
+	position:relative;
+	top:-5px;
+	width:680px; 
+	height:5px;
+	background:#000;
+	-moz-animation:fullexpand 25s ease-out infinite;
+	-webkit-animation:fullexpand 25s ease-out infinite;
+	-ms-animation:fullexpand 25s ease-out infinite;
+	-o-animation:fullexpand 25s ease-out infinite;
+}
+.footer{
+	height: 150px;
+	padding: 30px;
+	color: #FFF;
+	background-color: #333333;
+}
+.footer a { color:#994f23; text-decoration:none}
+.footer a:hover{color:#666}
